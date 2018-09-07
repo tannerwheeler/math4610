@@ -16,10 +16,11 @@
 [Software Manual](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
 
 
+
+
 ### 3. Problem: Create a shared library from the routines you have created.
 
 #### Answer:
-
 
 
 ### 4. Problem: In this problem you will learn a bit more about your computer and how many processes you can run on the cores included in your computer.
