@@ -1,1 +1,6 @@
-## Software Manual
+# Software Manual
+
+### 1. Basic Algorithms
+- [Single Precision Machine Epsilon](https://tannerwheeler.github.io/math4610/softwareManual/smaceps)
+- [Double Precision Machine Epsilon](https://tannerwheeler.github.io/math4610/softwareManual/smaceps)
+- [Quadratic Root Finder](https://tannerwheeler.github.io/math4610/softwareManual/roots)
