@@ -60,6 +60,7 @@ c There are           0  threads!
 
 #### Answer:
 The Taylor Series expansions can be found on pages 1-3 on the [HW1.pdf](https://tannerwheeler.github.io/math4610/homework/HW1.pdf).
+
 The Radius of Convergence for each of the series can be found on pages 4-6 of the [HW1.pdf](https://tannerwheeler.github.io/math4610/homework/HW1.pdf).
 
 
