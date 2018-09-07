@@ -27,7 +27,7 @@
 #### Answer:
 This was the input.  I was on a computer in the Engineering computer lab.
 ```
-program main
+	program main
 	integer id, nthrds
 	integer omp_get_thread_num, comp_get_num_threads
 C$OMP	PARALLEL PRIVATE(id)
