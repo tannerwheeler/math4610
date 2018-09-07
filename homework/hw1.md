@@ -21,6 +21,22 @@
 ### 3. Problem: Create a shared library from the routines you have created.
 
 #### Answer:
+```
+A01770306@ENG30310 ~/hw1_prob3
+$ gcc -c smaceps.c
+
+A01770306@ENG30310 ~/hw1_prob3
+$ ar crv testLibrary *.o
+a - smaceps.o
+
+A01770306@ENG30310 ~/hw1_prob3
+$ ranlib testLibrary
+
+A01770306@ENG30310 ~/hw1_prob3
+$ ls
+main.c  smaceps.c  smaceps.h  smaceps.o  testLibrary
+
+```
 
 
 ### 4. Problem: In this problem you will learn a bit more about your computer and how many processes you can run on the cores included in your computer.
