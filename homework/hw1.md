@@ -103,7 +103,10 @@ The solutions to the initial value problems can be found on pages 10-11 of the [
 ### 9. Problem: Search the internet for an application that is influenced by machine precision. Write a paragraph on one of the results you have found. Identify one and only one such web site. Make sure that you cite the web site appropriately.
 
 #### Answer:
+In an article from Siam News, written by Nicholas Higham, the history of machine precision in computers is discussed.  They talk about how computers only started with single precision and then double precision was introduced.  Even with double precision it didn't make things 100% better.  The amount of memory saved by single precision helped it get faster than double precision.  These computations became much faster when the Cell Processor for the Play Station 3 was created.  As manufacturers continue to improve their precision for different problems/designs we have today half precision and quadruple precision have been introduced.
 
+Source:
+Nicholas Higham, *A Multiprecision World*, Siam News, Oct. 2 2017, www.sinews.siam.org/Details-Page/a-multiprecision-world, Sept. 7 2018
 
 
 ## 10. Problem: Graph the solutions of the last two differential equations in the Problem above.
