@@ -71,7 +71,7 @@ c There are           0  threads!
 ### 7. Problem: Write a routine that will return the roots of a quadratic polynomial in an array. Also, create a software manual entry for the routine and include this in your software manual.
 
 #### Answer:
-
+[Quadratic Polynomial Root Finder](https://tannerwheeler.github.io/math4610/softwareManual/roots)
 
 
 ### 8. Problem: Compute the solutions for the following simple initial value problems.
