@@ -13,7 +13,7 @@
 ### 2. Problem: Create a repository on [Github](https://www.github.com) and create a repositry for this homework that will contain a software manual for all the code you will write and work with in the course.
 
 #### Answer:
-[Software Manual](https://tannerwheeler.github.io/math4610/softwareManual)
+[Software Manual](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
 
 
 ### 3. Problem: Create a shared library from the routines you have created.
