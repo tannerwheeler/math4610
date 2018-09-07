@@ -24,6 +24,10 @@ will produce an executable which can be run by
 This function must be called from the main function or another function. For example:
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
 int main()
 {
   int precision = smaceps();
@@ -41,6 +45,10 @@ to the console.
 
 **Implementation/Code:** The following is the code for smaceps()
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
 int smaceps() {
     float one = 1.0;
     float seps = 1.0;
