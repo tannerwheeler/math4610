@@ -59,13 +59,14 @@ c There are           0  threads!
 ### 5. Problem: We will use Taylor series expansions in a lot of the work we do in Math 4610. Expand the following functions about the given center x_o.  Find the radius of convergence of each of the series.
 
 #### Answer:
-
+The Taylor Series expansions can be found on pages 1-3 on the [HW1.pdf](https://tannerwheeler.github.io/math4610/homework/HW1.pdf).
+The Radius of Convergence for each of the series can be found on pages 4-6 of the [HW1.pdf](https://tannerwheeler.github.io/math4610/homework/HW1.pdf).
 
 
 ### 6. Problem: Compute the following antiderivatives.
 
 #### Answer:
-
+The Antiderivative Computations can be found on pages 7-9 of the [HW1.pdf](https://tannerwheeler.github.io/math4610/homework/HW1.pdf).
 
 
 ### 7. Problem: Write a routine that will return the roots of a quadratic polynomial in an array. Also, create a software manual entry for the routine and include this in your software manual.
@@ -77,6 +78,7 @@ c There are           0  threads!
 ### 8. Problem: Compute the solutions for the following simple initial value problems.
 
 #### Answer:
+The solutions to the initial value problems can be found on pages 10-11 of the [HW1.pdf](https://tannerwheeler.github.io/math4610/homework/HW1.pdf).
 
 
 
@@ -89,5 +91,6 @@ c There are           0  threads!
 ## 10. Problem: Graph the solutions of the last two differential equations in the Problem above.
 
 #### Answer:
+The Graphs can be found on page 12 of the [HW1.pdf](https://tannerwheeler.github.io/math4610/homework/HW1.pdf).
 
 
