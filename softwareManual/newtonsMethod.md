@@ -21,7 +21,7 @@ def function(x):
 def functionDerivative(x):
     return 2 * x
 ```
-Now you can call the bisection method with `x0 = -3`, `tol = 0.00000001`, and `maxiter = 20`:
+Now you can call the newton's method with `x0 = -3`, `tol = 0.00000001`, and `maxiter = 20`:
 ```
 newtonMethod(-3, function, functionDerivative, 0.00000001, 20)
 ```
