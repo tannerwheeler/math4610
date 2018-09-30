@@ -1,4 +1,4 @@
-## Homework #1
+## Homework #2
 #### Tanner Wheeler
 
 ### 1. Problem: Write routines that can be used to compute the absolute error and relative error.
@@ -53,13 +53,13 @@
 ### 8. Problem: Repeat the previous exercise with code written to implement a hybrid method using bisection to guarantee the roots are bracketed and Newton's method for faster convergence once the interval has been narrowed. Make sure that the bisection method reduces the interval size by one order of magnitude `(10^−1)` when the method is necessary. Then try one step of Newton's method to see if the interval has been reduced enough.
 
 #### Answer:
-
+[Software Manual Hybrid Newton's Method](https://tannerwheeler.github.io/math4610/softwareManual/hybridnewton)
 
 
 ### 9. Problem: Repeat the previous exercise with code written to implement a hybrid method using bisection to guarantee the roots are bracketed and the secant method for faster convergence once the interval has been narrowed. Make sure that the bisection method reduces the interval size by one order of magnitude `(10^−1)` when the method is necessary. Then try one step of the secant method to see if the interval has been reduced enough.
 
 #### Answer:
-
+[Software Manual Hybrid Secant Method](https://tannerwheeler.github.io/math4610/softwareManual/hybridSecant)
 
 ## 10. Problem: Perform an online search for references to bracketing of roots of functions of a single real variable. Look for applications an explanations of how to bracket roots of nonlinear functions. Make sure that you cite at least three sources. You can cite web sites and/or web pages that discuss bracketing.
 
