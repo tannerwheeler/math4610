@@ -1,97 +1,53 @@
-# Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
-This is a template file for building an entry in the student software manual project. You should use the formatting below to
-define an entry in your software manual.
+# Newton's Method
 
-**Routine Name:**           smaceps
+**Routine Name:**           newtonMethod
 
-**Author:** Joe Koebbe
+**Author:** Tanner Wheeler
 
-**Language:** Fortran. The code can be compiled using the GNU Fortran compiler (gfortran).
+**Language:** Python. This code can be run on a python 3 compiler. The file can be imported and then the method will run.
 
-For example,
+**Description/Purpose:** This routine will run Newton's Method.  Given one points it will use the slope at that point to find another point closer to the root and use that slope to again move closer.  This process is repeated until the computed root is less than the tolerance given.  This can't be used if the derivative at the point `x` equals zero. 
 
-    gfortran smaceps.f
+**Input:** This method has five parameters.  First, `x0`.  This is the starting point.  Second and Third, `f` and `fd` is the function you are finding the root for and the derivative of that function.  These will need to be created as another method, but the name of the method can be passed as a parameter without parenthesis as shown in Usage/Example.  Fourth, `tol` is the tolerance you want or to what accuracy do you want to find the root. Fifth, `maxiter` the maximum number of iterations you want the method to compute.
 
-will produce an executable **./a.exe** than can be executed. If you want a different name, the following will work a bit
-better
-
-    gfortran -o smaceps smaceps.f
-
-**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
-in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
-usually will need to be run one time for each computer.
-
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
-
-**Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
-computer being queried.
+**Output:** This routine returns a decimal number of the root for the function.
 
 **Usage/Example:**
+First you must create the method for `f` and `fct`:
+```
+def function(x):
+    return x**2 -3
+    
+def functionDerivative(x):
+    return 2 * x
+```
+Now you can call the bisection method with `x0 = -3`, `tol = 0.00000001`, and `maxiter = 20`:
+```
+newtonMethod(-3, function, functionDerivative, 0.00000001, 20)
+```
+This will return:
+```
+-1.7321166822956011
+```
 
-The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be
-represented. Since the code is written in terms of a Fortran subroutine, the values of the machine machine epsilon and
-the power of two that gives the machine epsilon. Due to implicit Fortran typing, the first argument is a single precision
-value and the second is an integer.
+**Implementation/Code:** The following is the code for newtonMethod(x0, f, fd, tol, maxiter)
+```
+def newtonMethod(x0, f, fd, tol, maxiter):
+    iter = 0
+    error = 10
+    
+    while error > tol and iter < maxiter:
+        iter = iter + 1
+        
+        #print(x0) testing purposes
+        
+        x1 = x0 - (f(x0)/fd(x0))
+        
+        error = abs(x1 - x0)
+        
+        x0 = x1
+    
+    return x0
+```
 
-      call smaceps(sval, ipow)
-      print *, ipow, sval
-
-Output from the lines above:
-
-      24   5.96046448E-08
-
-The first value (24) is the number of binary digits that define the machine epsilon and the second is related to the
-decimal version of the same value. The number of decimal digits that can be represented is roughly eight (E-08 on the
-end of the second value).
-
-**Implementation/Code:** The following is the code for smaceps()
-
-      subroutine smaceps(seps, ipow)
-    c
-    c set up storage for the algorithm
-    c --------------------------------
-    c
-          real seps, one, appone
-    c
-    c initialize variables to compute the machine value near 1.0
-    c ----------------------------------------------------------
-    c
-          one = 1.0
-          seps = 1.0
-          appone = one + seps
-    c
-    c loop, dividing by 2 each time to determine when the difference between one and
-    c the approximation is zero in single precision
-    c --------------------------------------------- 
-    c
-          ipow = 0
-          do 1 i=1,1000
-             ipow = ipow + 1
-    c
-    c update the perturbation and compute the approximation to one
-    c ------------------------------------------------------------
-    c
-            seps = seps / 2
-            appone = one + seps
-    c
-    c do the comparison and if small enough, break out of the loop and return
-    c control to the calling code
-    c ---------------------------
-    c
-            if(abs(appone-one) .eq. 0.0) return
-    c
-        1 continue
-    c
-    c if the code gets to this point, there is a bit of trouble
-    c ---------------------------------------------------------
-    c
-          print *,"The loop limit has been exceeded"
-    c
-    c done
-    c ----
-    c
-          return
-    end
-
-**Last Modified:** September/2017
+**Last Modified:** September/2018
