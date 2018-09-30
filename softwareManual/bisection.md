@@ -1,97 +1,73 @@
-# Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
-This is a template file for building an entry in the student software manual project. You should use the formatting below to
-define an entry in your software manual.
+# Bisection Method
 
-**Routine Name:**           smaceps
+**Routine Name:**           bisection
 
-**Author:** Joe Koebbe
+**Author:** Tanner Wheeler
 
-**Language:** Fortran. The code can be compiled using the GNU Fortran compiler (gfortran).
+**Language:** Python. This code can be run on a python 3 compiler. The file can be imported and then the method will run.
 
-For example,
+**Description/Purpose:** This routine will run the bisection method.  Given two points it will look at a point between them and move one end point, depending on the result, to shrink the interval until it is at a root.
 
-    gfortran smaceps.f
+**Input:** This method has five parameters.  First and Second, `a` and `b`.  These are the two end points of the interval with `a < b`.  Third, `fct` is the function you are finding the root for.  This will need to be created as another method, but the name of the method can be passed as a parameter without parenthesis as shown in Usage/Example.  Fourth, `tol` is the tolerance you want or to what accuracy do you want to find the root. Fifth, `maxiter` the maximum number of iterations you want the method to compute.
 
-will produce an executable **./a.exe** than can be executed. If you want a different name, the following will work a bit
-better
-
-    gfortran -o smaceps smaceps.f
-
-**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
-in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
-usually will need to be run one time for each computer.
-
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
-
-**Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
-computer being queried.
+**Output:** This routine returns a decimal number of the root for the function.  If `fct(a) * fct(b) > 0` then the method will return an error.
 
 **Usage/Example:**
+First you must create the method for `fct`:
+```
+def function(x):
+    return x**2 -3
+```
+Now you can call the bisection method with `a = -3`, `b = 0`, `tol = 0.00000001`, and `maxiter = 20`:
+```
+bisection(-3, 0, function, 0.00000001, 20)
+```
+This will return:
+```
+-1.7320508075688772
+```
+If `a = -10` and `b = -3` then the method would return:
+```
+ERROR!
+```
 
-The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be
-represented. Since the code is written in terms of a Fortran subroutine, the values of the machine machine epsilon and
-the power of two that gives the machine epsilon. Due to implicit Fortran typing, the first argument is a single precision
-value and the second is an integer.
+**Implementation/Code:** The following is the code for bisection(a, b, fct, tol, maxiter)
+```
+def bisection(a, b, fct, tol, maxiter):
+    error = 10 * tol
+    iter = 0
+    
+    fa = fct(a)
+    fb = fct(b)
+    
+    if(fa * fb > 0):
+            return "ERROR!"
+    
+    if(fa * fb == 0):
+        if(fa == 0):
+            return a;
+        if(fb == 0):
+            return b;
+    
+    while error > tol and iter < maxiter:
+        
+        iter = iter + 1
+        
+        c = (b + a) / 2
+        fc = fct(c)
+        
+        if(fa * fc == 0):
+            return c
+        elif(fa * fc < 0):
+            b = c
+            fb = fc
+        else:
+            a = c
+            fa = fc
+            
+        error = abs(b - a)
+        
+    return c
+```
 
-      call smaceps(sval, ipow)
-      print *, ipow, sval
-
-Output from the lines above:
-
-      24   5.96046448E-08
-
-The first value (24) is the number of binary digits that define the machine epsilon and the second is related to the
-decimal version of the same value. The number of decimal digits that can be represented is roughly eight (E-08 on the
-end of the second value).
-
-**Implementation/Code:** The following is the code for smaceps()
-
-      subroutine smaceps(seps, ipow)
-    c
-    c set up storage for the algorithm
-    c --------------------------------
-    c
-          real seps, one, appone
-    c
-    c initialize variables to compute the machine value near 1.0
-    c ----------------------------------------------------------
-    c
-          one = 1.0
-          seps = 1.0
-          appone = one + seps
-    c
-    c loop, dividing by 2 each time to determine when the difference between one and
-    c the approximation is zero in single precision
-    c --------------------------------------------- 
-    c
-          ipow = 0
-          do 1 i=1,1000
-             ipow = ipow + 1
-    c
-    c update the perturbation and compute the approximation to one
-    c ------------------------------------------------------------
-    c
-            seps = seps / 2
-            appone = one + seps
-    c
-    c do the comparison and if small enough, break out of the loop and return
-    c control to the calling code
-    c ---------------------------
-    c
-            if(abs(appone-one) .eq. 0.0) return
-    c
-        1 continue
-    c
-    c if the code gets to this point, there is a bit of trouble
-    c ---------------------------------------------------------
-    c
-          print *,"The loop limit has been exceeded"
-    c
-    c done
-    c ----
-    c
-          return
-    end
-
-**Last Modified:** September/2017
+**Last Modified:** September/2018
