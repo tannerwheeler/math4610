@@ -1,97 +1,32 @@
-# Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
-This is a template file for building an entry in the student software manual project. You should use the formatting below to
-define an entry in your software manual.
+# Derivative Approximation
 
-**Routine Name:**           smaceps
+**Routine Name:**           dxApprox
 
-**Author:** Joe Koebbe
+**Author:** Tanner Wheeler
 
-**Language:** Fortran. The code can be compiled using the GNU Fortran compiler (gfortran).
+**Language:**  Python. This code can be run on a python 3 compiler. The file can be imported and then the method will run.
 
-For example,
+**Description/Purpose:** This will give a derivative approximation.  The smaller the value for `h` the better the approximation will be.
 
-    gfortran smaceps.f
+**Input:** There are two inputs for this method.  First, `x` the value of x where you would like to compute the derivative value.  Second, `h` the smaller this value is the closer it gets to an exact approximation.  If `h` is too small however machine precision might interpret the value as 0 and try to divide by 0.  You will need to create another method with the desired function called `functionToRun(x)`.
 
-will produce an executable **./a.exe** than can be executed. If you want a different name, the following will work a bit
-better
-
-    gfortran -o smaceps smaceps.f
-
-**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
-in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
-usually will need to be run one time for each computer.
-
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
-
-**Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
-computer being queried.
+**Output:** This routine returns a decimal number of the derivative approximation.  The derivative represents the slope of the given function at the given x value.
 
 **Usage/Example:**
 
-The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be
-represented. Since the code is written in terms of a Fortran subroutine, the values of the machine machine epsilon and
-the power of two that gives the machine epsilon. Due to implicit Fortran typing, the first argument is a single precision
-value and the second is an integer.
+If I wanted to compute the derivative of `x^2 - 3` at `x = 3` with my `h = 0.000000001`.  I would use the method set up:
+```
+dxApprox(3, 0.000000001)
+```
+This would then return the slope of `x^2 -3` at `x = 3` is:
+```
+6.000000496442226
+```
 
-      call smaceps(sval, ipow)
-      print *, ipow, sval
+**Implementation/Code:** The following is the code for dxApprox(x, h)
+```
+def dxApprox(x, h):
+    return (functionToRun(x + h) - functionToRun(x)) / h
+```
 
-Output from the lines above:
-
-      24   5.96046448E-08
-
-The first value (24) is the number of binary digits that define the machine epsilon and the second is related to the
-decimal version of the same value. The number of decimal digits that can be represented is roughly eight (E-08 on the
-end of the second value).
-
-**Implementation/Code:** The following is the code for smaceps()
-
-      subroutine smaceps(seps, ipow)
-    c
-    c set up storage for the algorithm
-    c --------------------------------
-    c
-          real seps, one, appone
-    c
-    c initialize variables to compute the machine value near 1.0
-    c ----------------------------------------------------------
-    c
-          one = 1.0
-          seps = 1.0
-          appone = one + seps
-    c
-    c loop, dividing by 2 each time to determine when the difference between one and
-    c the approximation is zero in single precision
-    c --------------------------------------------- 
-    c
-          ipow = 0
-          do 1 i=1,1000
-             ipow = ipow + 1
-    c
-    c update the perturbation and compute the approximation to one
-    c ------------------------------------------------------------
-    c
-            seps = seps / 2
-            appone = one + seps
-    c
-    c do the comparison and if small enough, break out of the loop and return
-    c control to the calling code
-    c ---------------------------
-    c
-            if(abs(appone-one) .eq. 0.0) return
-    c
-        1 continue
-    c
-    c if the code gets to this point, there is a bit of trouble
-    c ---------------------------------------------------------
-    c
-          print *,"The loop limit has been exceeded"
-    c
-    c done
-    c ----
-    c
-          return
-    end
-
-**Last Modified:** September/2017
+**Last Modified:** September/2018
