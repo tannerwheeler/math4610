@@ -8,7 +8,7 @@
 
 **Description/Purpose:** This code will compute the l_2 norm of a vector. This can be run for any size of vector with integer, float, and double values.  The package `math` will need to be imported as shown in the implementation section.
 
-**Input:** The input for this method is a 1 dimensional vector/list of numbers.
+**Input:** The first input for this method is a 1 dimensional vector/list of numbers.  The second input is the length of the vector.
 
 **Output:** This routine returns a double precision value for the l_2 norm.
 
@@ -23,7 +23,7 @@ c[2] = 3.3
 ```
 Now let's print out the value return from our function given our created vector.
 ```
-print(norm2vec(c))
+print(norm2vec(c, 3))
 ```
 This would print
 ```
@@ -31,14 +31,14 @@ This would print
 ```
 to the console.
 
-**Implementation/Code:** The following is the code for norm2vec(x)
+**Implementation/Code:** The following is the code for norm2vec(x, m)
 ```
 import math
 
-def norm2vec(x):
+def norm2vec(x, m):
     numSum = 0.0
-    for i in x:
-        numSum = numSum + (abs(i)**2)
+    for i in range(m):
+        numSum = numSum + (abs(x[i])**2)
     
     return math.sqrt(numSum)
 ```
