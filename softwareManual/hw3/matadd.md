@@ -8,9 +8,9 @@
 
 **Description/Purpose:** This method will add two matrices together that have the same dimensions mxn.
 
-**Input:** The two inputs will be two matrices of dimensions mxn.
+**Input:** The two inputs will be two two dimensional arrays of dimensions mxn.
 
-**Output:** The output will be a new matrix that is the addition of the two input matrices.
+**Output:** The output will be a new matrix that is the addition of the two input arrays which will also be a two dimensional array.  If the dimensions aren't consistent for the inputs then the method will return an error message.
 
 **Usage/Example:**
 First let's create two matrices `a` and `b` whose dimensions are 3x2 and set there values.
