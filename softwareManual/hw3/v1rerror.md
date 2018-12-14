@@ -34,7 +34,7 @@ print(relVec1Error(c, d, m))
 ```
 This will print
 ```
-0.05555555555555555
+0.09230769230769233
 ```
 to the console.
 
