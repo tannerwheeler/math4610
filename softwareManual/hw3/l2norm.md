@@ -11,7 +11,7 @@
 **Input:** The input for this method is a 1 dimensional vector/list of numbers.
 
 **Usage/Example:**
-First let's create a vector c of size 3 and set each element to a specific number.
+First let's create a vector `c` of size 3 and set each element to a specific number.
 ```
 c = [float(0) for i in range(0, 3)]
 
@@ -29,7 +29,7 @@ This would print
 ```
 to the console.
 
-**Implementation/Code:** The following is the code for norm2vec()
+**Implementation/Code:** The following is the code for norm2vec(x)
 ```
 import math
 
