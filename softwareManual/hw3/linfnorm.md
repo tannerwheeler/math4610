@@ -21,7 +21,7 @@ c[0] = 1.5
 c[1] = 9.4
 c[2] = 3.3
 ```
-Now let's print out the value return from our function given our created vector.
+Now let's print out the value returned from our function given our created vector.
 ```
 print(normInfvec(c))
 ```
