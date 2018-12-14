@@ -13,7 +13,7 @@
 **Output:** This will return an array of length n.  If the array isn't the correct length the method will return an error message.
 
 **Usage/Example:** 
-First let's create a matrix `a` whose dimensions are 3x2 and set its values.
+First let's create a matrix `a` whose dimensions are 3x2 and `e` whose length is 2 with only 1's as its values.  Now set `a`'s values.
 ```
 n = 2
 m = 3
