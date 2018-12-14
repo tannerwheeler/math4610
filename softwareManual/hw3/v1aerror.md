@@ -8,7 +8,7 @@
 
 **Description/Purpose:** This will compute the absolute error between two vectors using the l_1 vector norm.  This can be run for any size of vector with integer, float, and double values.  This method does use the method [norm1vec(x)](https://tannerwheeler.github.io/math4610/softwareManual/hw3/l1norm).
 
-**Input:** There are three inputs for this method. The first two inputs are the two vectors you want to compare.  The third input is the size of both vectors.  Both vectors need to be of the same size the same size.
+**Input:** There are three inputs for this method. The first two inputs are the two vectors you want to compare.  The third input is the size of both vectors.  Both vectors need to be of the same size.
 
 **Output:** This routine returns a double precision value for the absolute error using the l_1 vector norm.
 
