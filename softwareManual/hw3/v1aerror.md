@@ -1,4 +1,4 @@
-#Absolute Error (L1 Norm)
+# Absolute Error (L1 Norm)
 
 **Routine Name:** absVec1Error
 
