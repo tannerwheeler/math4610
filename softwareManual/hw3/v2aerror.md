@@ -6,7 +6,7 @@
 
 **Language:** Python. This code can be run on a python 3 compiler. The file can be imported and then the method will run.
 
-**Description/Purpose:** This will compute the absolute error between two vectors using the l_2 vector norm.  This can be run for any size of vector with integer, float, and double values.  This method does use the method [norm2vec(x)](https://tannerwheeler.github.io/math4610/softwareManual/hw3/l2norm).
+**Description/Purpose:** This will compute the absolute error between two vectors using the l_2 vector norm.  This can be run for any size of vector with integer, float, and double values.  This method does use the method [norm2vec(x, m)](https://tannerwheeler.github.io/math4610/softwareManual/hw3/l2norm).
 
 **Input:** There are three inputs for this method. The first two inputs are the two vectors you want to compare.  The third input is the size of both vectors.  Both vectors need to be of the same size.
 
@@ -47,7 +47,7 @@ def absVec2Error(x, y, m):
     for i in range(m):
         z[i] = x[i] - y[i]
     
-    return norm2vec(z)
+    return norm2vec(z, m)
 ```
 
 **Last Modified:** December 2018
