@@ -8,7 +8,7 @@
 
 **Description/Purpose:** This code will compute the l_infinity norm of a vector. This can be run for any size of vector with integer, float, and double values.
 
-**Input:** The input for this method is a 1 dimensional vector/list of numbers.
+**Input:** The first input for this method is a 1 dimensional vector/list of numbers.  The second is the length of the vector.
 
 **Output:** This routine returns a double precision value for the l_infinity norm.
 
@@ -23,7 +23,7 @@ c[2] = 3.3
 ```
 Now let's print out the value returned from our function given our created vector.
 ```
-print(normInfvec(c))
+print(normInfvec(c, 3))
 ```
 This will print
 ```
@@ -32,13 +32,13 @@ This will print
 to the console.
 
 
-**Implementation/Code:** The following is the code for normInfvec(x)
+**Implementation/Code:** The following is the code for normInfvec(x, m)
 ```
-def normInfvec(x):
+def normInfvec(x, m):
     max = 0.0
-    for i in x:
-        if max < abs(i):
-            max = abs(i)
+    for i in range(m):
+        if max < abs(x[i]):
+            max = abs(x[i])
             
     return max
 ```
