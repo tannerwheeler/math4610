@@ -10,6 +10,8 @@
 
 **Input:** The input for this method is a 1 dimensional vector/list of numbers.
 
+**Output:** This routine returns a double precision value for the l_infinity norm.
+
 **Usage/Example:**
 First let's create a vector `c` of size 3 and set each element to a specific number.
 ```
