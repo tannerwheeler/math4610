@@ -8,9 +8,9 @@
 
 **Description/Purpose:** This will find the transpose of a given matrix.
 
-**Input:** This method takes one matrix as its only input.
+**Input:** This method takes one two dimensional array as its only input.
 
-**Output:** This method will return the transpose of the input matrix.
+**Output:** This method will return the transpose of the input array which is also a two dimensional array.
 
 **Usage/Example:** 
 First let's create a matrix `a` whose dimensions are 3x2 and set its values.
