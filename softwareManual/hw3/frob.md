@@ -6,7 +6,7 @@
 
 **Language:** Python. This code can be run on a python 3 compiler. The file can be imported and then the method will run.
 
-**Description/Purpose:** This method will compute the Frobenius Matrix Norm given a specific matrix.
+**Description/Purpose:** This method will compute the Frobenius Matrix Norm given a specific matrix.  You will need to import `math` as shown in the implementation section.
 
 **Input:** This method has only one input.  This input `x` is a matrix of dimensions mxn.
 
@@ -50,6 +50,8 @@ to the console.
 
 **Implementation/Code:** The following is the code for frobeniusMnorm(x)
 ```
+import math
+
 def frobeniusMnorm(x):
     numSum = 0.0
     
