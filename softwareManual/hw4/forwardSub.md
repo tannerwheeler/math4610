@@ -38,7 +38,7 @@ d = [2, 3, 2]
 ```
 Now let's print to the console the solution to our method
 ```
-print(forward(c, d))
+print(forwardSub(c, d))
 ```
 This prints
 ```
