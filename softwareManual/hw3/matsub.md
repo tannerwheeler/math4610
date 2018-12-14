@@ -8,9 +8,9 @@
 
 **Description/Purpose:** This method will subtract two matrices from each other that have the same dimensions mxn.
 
-**Input:** The two inputs will be two matrices of dimensions mxn.  The second input will be subtracted from the first input.
+**Input:** The two inputs will be two two dimensional arrays of dimensions mxn.  The second input will be subtracted from the first input.
 
-**Output:** The output will be a new matrix that is the subtraction of the two input matrices.
+**Output:** The output will be a new two dimensional array that is the subtraction of the two input arrays.  The method will return an error if the arrays aren't the same dimensions.
 
 **Usage/Example:**
 First let's create two matrices `a` and `b` whose dimensions are 3x2 and set there values.
