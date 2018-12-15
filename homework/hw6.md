@@ -1,3 +1,4 @@
+# Homework 6
 [Problem 1](https://tannerwheeler.github.io/math4610/homework/hw6/1)
 
 [Problem 2](https://tannerwheeler.github.io/math4610/homework/hw6/2)
