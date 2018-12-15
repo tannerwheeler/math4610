@@ -20,7 +20,7 @@ This will create a `a.out` file.  To run the program use the command
 **Output:** This will output the solution `x` that satisfies the equation `Ax=b`.  It will be a vector array of length n.
 
 **Usage/Example:**
-In our main function we want to create a two dimension vector array `a`, vector array `b`, vector array `x0` as a guess, use 150 for maxiter, and .0001 for tol. We will use our method [posdefMatrixCreator(int n, std::vector<double> &b)](https://tannerwheeler.github.io/math4610/softwareManual/hw5/spdMatrix) to define `a`.  Thus we create a main function
+In our main function we want to create a two dimension vector array `a`, vector array `b`, vector array `x0` as a guess, use 150 for maxiter, and .0001 for tol.
 
 ```
 #include<vector>
