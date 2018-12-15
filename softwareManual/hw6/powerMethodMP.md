@@ -6,7 +6,7 @@
 
 **Language:** C++.  This can be compiled using the GNU compiler.  On the command line when in the file containing the code use the command
 ```
-g++ ./<fileNameHere>.cpp 
+g++ -fopenmp ./<fileNameHere>.cpp 
 ```
 This will create a `a.out` file.  To run the program use the command
 ```
