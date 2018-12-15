@@ -1,5 +1,7 @@
 # Conjugate Gradient Method Using OpenMP
 
+[GO BACK TO SOFTWARE MANUAL](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
+
 **Routine Name:** conGradMP
 
 **Author:** Tanner Wheeler
