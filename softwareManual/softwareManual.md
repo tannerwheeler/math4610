@@ -81,4 +81,4 @@
 - [Inverse Power Method](https://tannerwheeler.github.io/math4610/softwareManual/hw6/invpowerMethod)
 - [Inverse Power Method OpenMP](https://tannerwheeler.github.io/math4610/softwareManual/hw6/invpowerMethodMP)
 - [2-Condition Number](https://tannerwheeler.github.io/math4610/softwareManual/hw6/condNum)
-- [2-Condition Number OpenMP](https://tannerwheeler.github.io/math4610/softwareManual/hw6/condNumMP)
+- [2-Condition Number OpenMP](https://tannerwheeler.github.io/math4610/softwareManual/hw6/conNumMP)
