@@ -56,14 +56,14 @@
 - [Determinant](https://tannerwheeler.github.io/math4610/softwareManual/hw3/det)
 
 ### Direct Solvers
-- [Gaussian Elimination](https://tannerwheeler.github.io/math4610/softwareManual/hw5/gaussElim) This works for square and non square matrices.
-- [Forward Substitution](https://tannerwheeler.github.io/math4610/softwareManual/hw5/forwardSub)
-- [Back Substitution](https://tannerwheeler.github.io/math4610/softwareManual/hw5/backSub)
-- [Gaussian Elimination Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw5/gaussSolv)
-- [LU Factorization](https://tannerwheeler.github.io/math4610/softwareManual/hw5/lufact)
-- [LU Factorization Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw5/lufactSolv)
-- [Cholesky Factorization](https://tannerwheeler.github.io/math4610/softwareManual/hw5/chol)
-- [Cholesky Factorization Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw5/cholSolv)
+- [Gaussian Elimination](https://tannerwheeler.github.io/math4610/softwareManual/hw4/gaussElim) This works for square and non square matrices.
+- [Forward Substitution](https://tannerwheeler.github.io/math4610/softwareManual/hw4/forwardSub)
+- [Back Substitution](https://tannerwheeler.github.io/math4610/softwareManual/hw4/backSub)
+- [Gaussian Elimination Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw4/gaussSolv)
+- [LU Factorization](https://tannerwheeler.github.io/math4610/softwareManual/hw4/lufact)
+- [LU Factorization Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw4/lufactSolv)
+- [Cholesky Factorization](https://tannerwheeler.github.io/math4610/softwareManual/hw4/chol)
+- [Cholesky Factorization Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw4/cholSolv)
 
 ### Iterative Solvers
 - [Jacobi](https://tannerwheeler.github.io/math4610/softwareManual/hw5/jacobi)
