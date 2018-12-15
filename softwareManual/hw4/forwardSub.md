@@ -1,5 +1,7 @@
 # Forward Substitution
 
+[GO BACK TO SOFTWARE MANUAL](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
+
 **Routine Name:** fowardSub
 
 **Author:** Tanner Wheeler
