@@ -1,5 +1,7 @@
 # Matrix Subtraction
 
+[GO BACK TO SOFTWARE MANUAL](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
+
 **Routine Name:** subtractMatrix
 
 **Author:** Tanner Wheeler
