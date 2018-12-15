@@ -64,4 +64,7 @@
 ## 10. Problem: Perform an online search for references to bracketing of roots of functions of a single real variable. Look for applications an explanations of how to bracket roots of nonlinear functions. Make sure that you cite at least three sources. You can cite web sites and/or web pages that discuss bracketing.
 
 #### Answer:
+- “Roots of Nonlinear Functions.” Ralston's Second Order Method, Mathematics Source Library C & ASM, www.mymathlib.com/roots/.
+- Chen, Berlin. Roots: Bracketing Methods. NationalTaiwan Normal University, citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.720.8609&rep=rep1&type=pdf.
+- Nonlinear Equations. University of Auckland, home.iitk.ac.in/~pranab/ESO208/rajesh/03-04/Nonlinear.pdf.
 
