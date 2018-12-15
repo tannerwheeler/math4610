@@ -61,7 +61,7 @@
 - [Back Substitution](https://tannerwheeler.github.io/math4610/softwareManual/hw4/backSub)
 - [Gaussian Elimination Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw4/gaussSolv)
 - [LU Factorization](https://tannerwheeler.github.io/math4610/softwareManual/hw4/lufact)
-- [LU Factorization Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw4/lufactSolv)
+- [LU Factorization Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw4/luSolv)
 - [Cholesky Factorization](https://tannerwheeler.github.io/math4610/softwareManual/hw4/chol)
 - [Cholesky Factorization Solver](https://tannerwheeler.github.io/math4610/softwareManual/hw4/cholSolv)
 
