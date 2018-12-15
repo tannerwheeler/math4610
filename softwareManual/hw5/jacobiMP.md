@@ -1,6 +1,6 @@
 # Jacobi Iterative Method OpenMP
 
-**Routine Name:** jacobi
+**Routine Name:** jacobiMP
 
 **Author:** Tanner Wheeler
 
@@ -54,7 +54,7 @@ int main(void)
 		x[i] = 0.0; //Our guess will be a vector of zeros
 	}
 
-	std::cout << jacobi(a, b, 150, .0001) << std::endl;
+	std::cout << jacobiMP(a, b, 150, .0001) << std::endl;
 
 	return 0;
 }  
@@ -67,17 +67,17 @@ a = [[7.0, 3.0, 1.0],
      
 b = [11.0, 15.0, 18.0]
 ```
-Our output for the jacobi method will be
+Our output for the jacobiMP method will be
 ```
 [1.0000268759569217, 1.000023674136068, 1.0000113182069135]
 ```
 
 
-**Implementation/Code:** The following is the code for jacobi(a, b, x0, maxiter, tol)
+**Implementation/Code:** The following is the code for jacobiMP(a, b, x0, maxiter, tol)
 ```
 #include <vector>
 
-std::vector<double> jacobi(std::vector<std::vector<double>> a, std::vector<double> b, std::vector<double> x0, int maxiter, double tol)
+std::vector<double> jacobiMP(std::vector<std::vector<double>> a, std::vector<double> b, std::vector<double> x0, int maxiter, double tol)
 {
 	int iter = 0;
 	int n = b.size();
