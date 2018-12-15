@@ -1,5 +1,7 @@
 # Power Method
 
+[GO BACK TO SOFTWARE MANUAL](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
+
 **Routine Name:** powermethod
 
 **Author:** Tanner Wheeler
