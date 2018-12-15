@@ -67,9 +67,9 @@ a = [[7.0, 3.0, 1.0],
      
 b = [11.0, 15.0, 18.0]
 ```
-Our output for the jacobi method will be
+Our output for the Conjugate Gradient method will be
 ```
-[1.0000268759569217, 1.000023674136068, 1.0000113182069135]
+[0.9999641037446935, 1.0000164852836104, 0.999989210187439]
 ```
 
 
