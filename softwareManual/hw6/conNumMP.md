@@ -48,7 +48,7 @@ int main(void)
   b[1] = 15.0
   b[2] = 18.0
 
-	std::cout << cond2(a, b, 15, .0001) << std::endl;
+	std::cout << cond2MP(a, b, 15, .0001) << std::endl;
 
 	return 0;
 }  
@@ -61,7 +61,7 @@ a = [[7.0, 3.0, 1.0],
      
 b = [11.0, 15.0, 18.0]
 ```
-Our output for the cond2 method will be
+Our output for the cond2MP method will be
 ```
 112.79883363958864
 ```
