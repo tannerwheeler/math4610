@@ -1,5 +1,7 @@
 # L2 Vector Norm
 
+[GO BACK TO SOFTWARE MANUAL](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
+
 **Routine Name:** norm2vec
 
 **Author:** Tanner Wheeler
