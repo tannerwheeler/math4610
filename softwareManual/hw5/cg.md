@@ -54,7 +54,7 @@ int main(void)
 		x[i] = 0.0; //Our guess will be a vector of zeros
 	}
 
-	std::cout << conGrad(a, b, 15, .0001) << std::endl;
+	std::cout << conGrad(a, b, x, 15, .0001) << std::endl;
 
 	return 0;
 }  
