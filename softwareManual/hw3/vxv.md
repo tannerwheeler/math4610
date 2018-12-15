@@ -1,5 +1,7 @@
 # Dot Product (Inner Product)
 
+[GO BACK TO SOFTWARE MANUAL](https://tannerwheeler.github.io/math4610/softwareManual/softwareManual)
+
 **Routine Name:** innervectorprod
 
 **Author:** Tanner Wheeler
