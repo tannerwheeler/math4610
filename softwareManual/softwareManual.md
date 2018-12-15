@@ -32,7 +32,7 @@
 - [Vector Subtraction](https://tannerwheeler.github.io/math4610/softwareManual/hw3/vecsub)
 - [Scalar Vector Multiplication](https://tannerwheeler.github.io/math4610/softwareManual/hw3/scalarxvec)
 - [Inner Product (Dot Product)](https://tannerwheeler.github.io/math4610/softwareManual/hw3/vxv)
-- [Cross Product](https://tannerwheeler.github.io/math4610/softwareManual/hw3/crossprod)
+- [Cross Product](https://tannerwheeler.github.io/math4610/softwareManual/hw3/crossvec)
 - [Change of Basis](https://tannerwheeler.github.io/math4610/softwareManual/hw3/basis)
 
 ### Matrix Norms
