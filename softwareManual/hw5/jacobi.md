@@ -51,7 +51,7 @@ int main(void)
   
 	for (int i = 0; i < x.size(); i++)
 	{
-		x[i] = 0.0;
+		x[i] = 0.0; //Our guess will be a vector of zeros
 	}
 
 	std::cout << jacobi(a, b, 150, .0001) << std::endl;
@@ -89,7 +89,7 @@ std::vector<double> jacobi(std::vector<std::vector<double>> a, std::vector<doubl
 	{
 		int i,j;
 		for (i = 0; i < n; i++)
-		{	
+		{
 
 			x1[i] = 0.0f;
 		
